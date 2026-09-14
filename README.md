@@ -560,3 +560,5 @@ Built with Python • Machine Learning • Streamlit
 
 This project is intended for educational and research purposes.
 
+### Live DEMO:
+https://krutipeepre-credit-card-fraud-detector-app-ztjkjk.streamlit.app/
