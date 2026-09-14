@@ -52,6 +52,9 @@ if st.button("Predict Fraud Status", type="primary"):
     # Scale Time and Amount using the saved scaler
     input_df[['Time', 'Amount']] = scaler.transform(input_df[['Time', 'Amount']])
     
+    # Ensure columns match the exact order the model was trained on
+    input_df = input_df[model.feature_names_in_]
+    
     # Prediction
     prediction = model.predict(input_df)
     prediction_proba = model.predict_proba(input_df)
